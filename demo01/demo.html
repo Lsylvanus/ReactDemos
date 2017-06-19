@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      var myStyle = {
+		fontSize: 20,
+		color: '#FF0000'
+      }
+
+      ReactDOM.render(
+		/*注释:1、在标签内部的注释需要花括号2、在标签外的的注释不能使用花括号*/
+		<section>
+			<h1>这是正确的例子</h1>
+			<span>假设这里是标题下面的内容</span>
+			<h1 style = {myStyle}>Hello, world!{/*注释...*/}</h1>
+		</section>,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
