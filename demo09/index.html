@@ -8,6 +8,9 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
+	/*设置了输入框 input 值value = {this.state.data}。
+	在输入框值发生变化时我们可以更新 state。
+	我们可以使用 onChange 事件来监听 input 的变化，并修改 state。*/
       var Input = React.createClass({
         getInitialState: function() {
           return {value: 'Hello!'};
